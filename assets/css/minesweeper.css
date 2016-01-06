@@ -1,0 +1,76 @@
+.piece{
+    background-color: #eee;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+    height: 50px;
+    line-height: 51px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50px;
+	font-size:22px;
+}
+
+.piece.flag{
+	background-image:url('../images/flag.png');
+	background-repeat:no-repeat;
+	background-position:50%;
+}
+
+.piece.opened{
+	background-color:#CCC;
+}
+
+.piece.mines1{
+	color:blue;
+}
+
+.piece.mines2{
+	color:#25EB1E;
+}
+
+.piece.mines3{
+	color:#EB2C1E;
+}
+
+.piece.mines4{
+	color:#EB1EE4;
+}
+
+.piece.mines5{
+	color:#03918F;
+}
+
+.piece.mines6{
+	color:#8A9103;
+}
+
+.piece.mines7{
+	color:#91032E;
+}
+
+.piece.mines8{
+	color:#757575;
+}
+
+.line{
+	width:100%;
+	overflow:hidden;
+}
+
+.line:first-child  .piece{
+	border-top:1px solid black;
+}
+
+.line  .piece:first-child{
+	border-left:1px solid black;
+}
+
+.mine{
+	background-color:#c9302c !important;
+	background-image:url("../images/mine.png");
+	background-repeat:no-repeat;
+	background-position:50%;
+}
