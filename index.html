@@ -2,10 +2,11 @@
 <html>
 	<head>
 		<title>Minesweeper</title>
-		
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="http://connect.facebook.net/en_US/all.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" src="assets/js/client/minesweeper.js"></script>
-		
+
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="assets/css/minesweeper.css" />
 	</head>
@@ -15,8 +16,6 @@
 				<div class="navbar-header">
 					<a class="navbar-brand" href="/">Minesweeper</a>
 				</div>
-
-				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
@@ -24,11 +23,19 @@
 						</li>
 					</ul>
 				</div>
-				<!-- /.navbar-collapse -->
 			</div>
-			<!-- /.container -->
 		</nav>
 		<section class="container minesweeperBoard">
 		</section>
+		<div class="overlay">
+		</div>
+		<div class="shareOn">
+			<img src="assets/images/winner.jpg" />
+			<hr />
+			<label>Share you have won with your friends</label>
+			<div class="networks">
+				<a class="shareOnFacebook"></a>
+			</div>
+		</div>
 	</body>
 </html>
