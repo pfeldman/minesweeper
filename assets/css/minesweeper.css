@@ -10,13 +10,13 @@
     text-align: center;
     vertical-align: middle;
     width: 50px;
-	font-size:22px;
+    font-size:22px;
 }
 
 .piece.flag{
-	background-image:url('../images/flag.png');
-	background-repeat:no-repeat;
-	background-position:50%;
+    background-image:url('../images/flag.png');
+    background-repeat:no-repeat;
+    background-position:50%;
 }
 
 .overlay{
@@ -38,9 +38,14 @@
     padding: 33px 9px 9px;
     position: fixed;
     text-align: center;
-    top: 20%;
+    top: 10%;
     width: 50%;
-	display:none;
+    display:none;
+}
+
+.minesweeperBoard{
+    position:relative;
+    left:50%;
 }
 
 .shareOnFacebook{
@@ -49,80 +54,75 @@
     display: block;
     height: 32px;
     width: 32px;
-	float:left;
-	margin-right:10px;
+    float:left;
+    margin-right:10px;
 }
 
-.shareOnTwitter{
-    background-image: url("../images/twitter.png");
-    cursor: pointer;
-    display: block;
-    height: 32px;
-    width: 32px;
-	float:left;
+.shareOn label a{
+    cursor:pointer;
 }
 
 .networks{
     height: 32px;
     left: 50%;
-    margin-left: -37px;
+    margin-left: -17px;
     margin-top: 12px;
     position: relative;
-    width: 74px;
+    width: 34px;
 }
 
 .piece.opened{
-	background-color:#CCC;
+    background-color:#CCC;
 }
 
 .piece.mines1{
-	color:blue;
+    color:blue;
 }
 
 .piece.mines2{
-	color:#25EB1E;
+    color:#25EB1E;
 }
 
 .piece.mines3{
-	color:#EB2C1E;
+    color:#EB2C1E;
 }
 
 .piece.mines4{
-	color:#EB1EE4;
+    color:#EB1EE4;
 }
 
 .piece.mines5{
-	color:#03918F;
+    color:#03918F;
 }
 
 .piece.mines6{
-	color:#8A9103;
+    color:#8A9103;
 }
 
 .piece.mines7{
-	color:#91032E;
+    color:#91032E;
 }
 
 .piece.mines8{
-	color:#757575;
+    color:#757575;
 }
 
 .line{
-	width:100%;
-	overflow:hidden;
+    width:100%;
+    overflow:hidden;
 }
 
 .line:first-child  .piece{
-	border-top:1px solid black;
+    border-top:1px solid black;
 }
 
 .line  .piece:first-child{
-	border-left:1px solid black;
+    border-left:1px solid black;
 }
 
 .mine{
-	background-color:#c9302c !important;
-	background-image:url("../images/mine.png");
-	background-repeat:no-repeat;
-	background-position:50%;
+    background-color:#c9302c !important;
+    background-image:url("../images/mine.png");
+    background-repeat:no-repeat;
+    background-position:50%;
 }

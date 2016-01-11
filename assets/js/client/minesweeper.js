@@ -75,6 +75,10 @@ function Board(settings, parentDom) {
 		{
 			$(".overlay").show();
 			$(".shareOn").fadeIn("slow");
+			console.log($(".shareOn label"));
+			$(".shareOn label").click(function(){
+				location.reload();
+			});
 			$(".shareOnFacebook").click(function(){
 				var fbpopup = window.open("https://www.facebook.com/sharer/sharer.php?u=http://www.google.com", "pop", "width=600, height=400, scrollbars=no");
 			});
@@ -189,6 +193,10 @@ function Board(settings, parentDom) {
 				newLine = true;
 			}
 		}
+
+		this.parentDom.css({
+			'margin-left': this.settings.width * -25
+		});
 	};
 }
 
@@ -200,4 +208,4 @@ $(function(){
 	}, $(".minesweeperBoard"));
 
 	board.renderBoard();
-})
+});
